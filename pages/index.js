@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Welcome from '../components/welcome'
 
 export default function Home() {
   return (
@@ -13,9 +14,8 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://xiaozhu.dev">小猪</a>
         </h1>
-
-        <p className={styles.description}>👋</p>
-
+        <p className={styles.description}></p>
+        <Welcome className={styles.title} />
         <div className={styles.grid}>
           <a href="https://xiaozhu.dev" className={styles.card}>
             <h3>click 👆 &rarr;</h3>
